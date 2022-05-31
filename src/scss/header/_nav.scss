@@ -1,24 +1,27 @@
 .nav {
   $root: &;
+  display: flex;
+  align-items: center;
+  padding-right: 30px;
+  max-width: calc(70%);
 
-  &__menu-btn {
-    display: none;
-    font-size: 24px;
-    line-height: 46px;
-    padding: 0 12px;
-    cursor: pointer;
-    transition: color .2s ease-in-out;
+  &__item {
+    font-family: $nexa;
+    font-size: 20px;
+    transition: color .2s ease;
+    white-space: nowrap;
 
-    @include tablet {
-      display: inline-block;
+    &:hover, #{$root}__item:focus {
+      color: $black;
+    }
+
+    &--active {
+      color: $black;
+    }
+
+    & + & {
+      margin-left: 26px;
     }
   }
-
-
-
-  &__mob-menu {
-
-  }
-
-
 }
+

@@ -6,8 +6,13 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=yes, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Start project</title>
-    <!--<link type="image/png" rel="shortcut icon" href="img/logo.svg">-->
+    <title>Dentista</title>
+    <link type="image/png" rel="shortcut icon" href="img/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:wght@500;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
 
 
     <link rel="stylesheet" href="css/animate.css">
@@ -15,11 +20,91 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header></header>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <a href="#" class="header__logo">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+                <!--/header__logo-->
+                <ul class="header__contacts">
+                    <li class="header__contact">
+                        <div class="header__contact-icon-wrapper">
+                            <i class="header__contact-icon fas fa-clock"></i>
+                        </div>
+                        <div class="header__contact-info">
+                            <span class="header__contact-title">WORK TIME: 09:00 - 17:00</span>
+                            <span class="header__contact-text">Saturday and Sunday - CLOSED</span>
+                        </div>
+                    </li>
+                    <!--/header__contact-->
+                    <li class="header__contact">
+                        <div class="header__contact-icon-wrapper">
+                            <i class="header__contact-icon fas fa-envelope"></i>
+                        </div>
+                        <div class="header__contact-info">
+                            <span class="header__contact-title">Mail us</span>
+                            <a href="mailto: free@psd.in.ua" class="header__contact-text header__contact-text--link">free@psd.in.ua</a>
+                        </div>
+                    </li>
+                    <!--/header__contact-->
+                    <li class="header__contact">
+                        <div class="header__contact-icon-wrapper">
+                            <i class="header__contact-icon fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="header__contact-info">
+                            <span class="header__contact-title">Call us</span>
+                            <a href="tel:+123 4567 8900" class="header__contact-text header__contact-text--link">+123 4567 8900</a>
+                        </div>
+                    </li>
+                    <!--/header__contact-->
+                </ul>
+                <!--/header__contacts-->
+            </div>
+            <!--/header__top-->
+            <div class="header__bottom">
+                <nav class="nav" id="nav">
+                    <a class="nav__item nav__item--active" href="#">Home</a>
+                    <a class="nav__item" href="#">About</a>
+                    <a class="nav__item" href="#">Services</a>
+                    <a class="nav__item" href="#">Gallery</a>
+                    <a class="nav__item" href="#">Blog</a>
+                    <a class="nav__item" href="#">Contact us</a>
+                </nav>
+                <!--/nav-->
+                <div class="header__social">
+                    <a href="#" class="header__social-item"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="header__social-item"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="header__social-item"><i class="fab fa-vk"></i></a>
+                    <a href="#" class="header__social-item"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="header__social-item"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <!--/header__social-->
+            </div>
+            <!--/header__nav-->
+        </div>
+    </header>
+    <!--/header-->
+    <main>
+        <section class="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <h1 class="banner__title">We have Best Medicare
+                            plan options for you</h1>
+                        <p class="banner__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                        <a href="#" class="btn btn--default">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/banner-->
+    </main>
+    <!--/main-->
 
-    <main></main>
-
-    <footer></footer>
+    <footer>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto assumenda, consequatur dolore ducimus, facere libero maxime minus odit officia quaerat quia temporibus tenetur? Dolore ea fuga itaque nobis voluptas.
+    </footer>
 
     <!-- jquery -->
     <script src="js/jquery-3.5.1.js"></script>

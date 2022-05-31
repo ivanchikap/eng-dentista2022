@@ -1,10 +1,16 @@
+@font-face {
+  font-family: "nexabold";
+  src: url("../webfonts/Nexa-Bold.woff") format("woff"),
+  url("../webfonts/Nexa-Bold.woff2") format("woff2");
+}
+
 body {
-  //font-family: $montserrat;
-  //color: rgba($black, 0.8);
-  //background-color: $bg-gray;
+  font-family: $opensans, sans-serif;
+  color: #6a6a6a;
+  background-color: #fff;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 1.2;
+  font-size: 17px;
+  line-height: 1.76;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

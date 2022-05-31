@@ -1,0 +1,109 @@
+.header {
+  padding: 12px 0;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(#c2c2c2, 0.31);
+  }
+
+  &__logo {
+    width: 210px;
+    height: auto;
+    flex-shrink: 0;
+
+    img {
+      @include img-cover;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    max-width: calc(100% - 132px);
+    overflow: hidden;
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+    padding: 0 32px;
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  &__contact-icon-wrapper {
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    line-height: 56px;
+    background-color: $light-blue;
+    text-align: center;
+    margin-right: 18px;
+    flex-shrink: 0;
+  }
+
+  &__contact-icon {
+    color: #ffffff;
+    font-size: 24px;
+  }
+
+  &__contact-info {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  &__contact-title {
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+    max-width: 218px;
+    @include text-overflow;
+  }
+
+  &__contact-text {
+    max-width: 218px;
+    @include text-overflow;
+
+    &--link {
+      transition: color .2s ease;
+
+      &:hover {
+        color: $light-blue;
+      }
+    }
+  }
+
+  &__bottom {
+    padding: 32px 0 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 24px;
+  }
+
+  &__social {
+    max-width: 30%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    align-items: center;
+  }
+
+  &__social-item {
+    font-size: 24px;
+    color: $black;
+    transition: color .2s ease;
+
+    &:hover {
+      color: $light-blue;
+    }
+
+    & + & {
+      margin-left: 26px;
+    }
+  }
+}

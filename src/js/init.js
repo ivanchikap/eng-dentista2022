@@ -1,4 +1,11 @@
-$(document).ready(function(){
+document.addEventListener('DOMContentLoaded', onLoad);
+
+function onLoad() {
+
+    let nav = document.getElementById('nav');
+
+    nav.addEventListener('click',  navActive);
+
 
     $(window).stellar({
         responsive: true,
@@ -99,4 +106,17 @@ $(document).ready(function(){
     });
 */
     //Плавна прокрутка по якорям сайту
-});
+}
+
+function navActive(e) {
+    const navArr = [...nav.children];
+    navArr.forEach((child) => {
+       if (child.classList.contains('nav__item--active')) {
+           child.classList.remove('nav__item--active');
+       }
+    });
+    if (e.target.classList.contains('nav__item')) {
+        e.target.classList.toggle('nav__item--active');
+    }
+}
+
