@@ -2,6 +2,9 @@
   height: 640px;
   background: url("../img/banner.jpg") no-repeat center center / cover;
   text-align: center;
+  display: flex;
+  align-items: center;
+
 
   &__title {
     color: #474747;
@@ -9,5 +12,10 @@
     font-size: 48px;
     font-weight: 500;
     letter-spacing: -1.19px;
+    line-height: 1;
+  }
+
+  &__text {
+    margin: 37px 0 42px;
   }
 }

@@ -94,6 +94,21 @@ body {
   }
 }
 
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: $lato;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.32px;
+  padding: 16px 26px;
+  text-align: center;
+  background-color: $light-blue;
+  box-shadow: -4px 12px 40px rgba(0, 1, 1, 0.2);
+  border-radius: 36px;
+}
+
 
 .btn-menu {
   display: none;
