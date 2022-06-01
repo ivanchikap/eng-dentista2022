@@ -41,3 +41,16 @@
   text-overflow: ellipsis;
   overflow: hidden;
 }
+
+@mixin sprite($bgc, $bgpX, $bgpY) {
+  content: '';
+  display: block;
+  background-image: url('../img/css_sprites.png');
+  background-color: $bgc;
+  background-position: $bgpX $bgpY;
+  width: 74px;
+  height: 74px;
+  order: -1;
+  margin: 16px auto;
+  border-radius: 50%;
+}

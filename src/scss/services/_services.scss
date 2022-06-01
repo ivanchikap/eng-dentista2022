@@ -1,0 +1,135 @@
+.services {
+  width: 100%;
+  min-height: 360px;
+
+  &__list {
+    display: flex;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    color: #fff;
+    background-color: #43b1d2;
+    text-align: center;
+    padding: 56px 68px;
+
+    &--treatment {
+      &::after {
+        @include sprite(#fff, 6px, -182px);
+      }
+    }
+
+    &--emergency {
+      &::after {
+        @include sprite(#fff, -108px,-94px);
+      }
+    }
+
+    &--staff {
+      &::after {
+        @include sprite(#fff, -311px, -75px);
+      }
+    }
+
+    &--doctors {
+      &::after {
+        @include sprite(#fff, -122px, -176px);
+      }
+    }
+  }
+
+  &__card-title {
+    font-family: $montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -1.82px;
+    margin-bottom: 4px;
+    max-width: 100%;
+    padding: 0 4px;
+    @include text-overflow;
+  }
+
+  &__card-text {
+    font-family: $opensans;
+    font-size: 16px;
+    line-height: 30px;
+    max-height: 120px;
+    overflow: hidden;
+  }
+}
+
+
+.bg-car {
+  width: 44px; height: 42px;
+  background: url('css_sprites.png') -138px -192px;
+}
+
+
+.bg-choose1 {
+  width: 43px; height: 45px;
+  background: url('css_sprites.png') -75px -192px;
+}
+
+
+.bg-choose2 {
+  width: 41px; height: 53px;
+  background: url('css_sprites.png') -332px -10px;
+}
+
+
+.bg-choose3 {
+  width: 45px; height: 41px;
+  background: url('css_sprites.png') -202px -192px;
+}
+
+
+.bg-choose4 {
+  width: 47px; height: 53px;
+  background: url('css_sprites.png') -232px -101px;
+}
+
+
+.bg-customers {
+  width: 91px; height: 80px;
+  background: url('css_sprites.png') -10px -10px;
+}
+
+
+.bg-emergency {
+  width: 51px; height: 46px;
+  background: url('css_sprites.png') -121px -110px;
+}
+
+
+.bg-heart {
+  width: 80px; height: 71px;
+  background: url('css_sprites.png') -232px -10px;
+}
+
+
+.bg-helicopter {
+  width: 91px; height: 62px;
+  background: url('css_sprites.png') -10px -110px;
+}
+
+
+.bg-lung {
+  width: 91px; height: 73px;
+  background: url('css_sprites.png') -121px -10px;
+}
+
+
+.bg-staff {
+  width: 31px; height: 54px;
+  background: url('css_sprites.png') -332px -83px;
+}
+
+
+.bg-treatment {
+  width: 45px; height: 50px;
+  background: url('css_sprites.png') -10px -192px;
+}
