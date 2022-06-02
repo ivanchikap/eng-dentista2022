@@ -1,71 +1,71 @@
 
 .bg-car {
     width: 44px; height: 42px;
-    background: url('css_sprites.png') -138px -192px;
+    background: url('../img/css_sprites.png') -138px -192px;
 }
 
 
 .bg-choose1 {
     width: 43px; height: 45px;
-    background: url('css_sprites.png') -75px -192px;
+    background: url('../img/css_sprites.png') -75px -192px;
 }
 
 
 .bg-choose2 {
     width: 41px; height: 53px;
-    background: url('css_sprites.png') -332px -10px;
+    background: url('../img/css_sprites.png') -332px -10px;
 }
 
 
 .bg-choose3 {
     width: 45px; height: 41px;
-    background: url('css_sprites.png') -202px -192px;
+    background: url('../img/css_sprites.png') -202px -192px;
 }
 
 
 .bg-choose4 {
     width: 47px; height: 53px;
-    background: url('css_sprites.png') -232px -101px;
+    background: url('../img/css_sprites.png') -232px -101px;
 }
 
 
 .bg-customers {
     width: 91px; height: 80px;
-    background: url('css_sprites.png') -10px -10px;
+    background: url('../img/css_sprites.png') -10px -10px;
 }
 
 
 .bg-emergency {
     width: 51px; height: 46px;
-    background: url('css_sprites.png') -121px -110px;
+    background: url('../img/css_sprites.png') -121px -110px;
 }
 
 
 .bg-heart {
     width: 80px; height: 71px;
-    background: url('css_sprites.png') -232px -10px;
+    background: url('../img/css_sprites.png') -232px -10px;
 }
 
 
 .bg-helicopter {
     width: 91px; height: 62px;
-    background: url('css_sprites.png') -10px -110px;
+    background: url('../img/css_sprites.png') -10px -110px;
 }
 
 
 .bg-lung {
     width: 91px; height: 73px;
-    background: url('css_sprites.png') -121px -10px;
+    background: url('../img/css_sprites.png') -121px -10px;
 }
 
 
 .bg-staff {
     width: 31px; height: 54px;
-    background: url('css_sprites.png') -332px -83px;
+    background: url('../img/css_sprites.png') -332px -83px;
 }
 
 
 .bg-treatment {
     width: 45px; height: 50px;
-    background: url('css_sprites.png') -10px -192px;
+    background: url('../img/css_sprites.png') -10px -192px;
 }

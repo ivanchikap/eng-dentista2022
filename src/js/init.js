@@ -3,8 +3,10 @@ document.addEventListener('DOMContentLoaded', onLoad);
 function onLoad() {
 
     let nav = document.getElementById('nav');
+    let navMobile = document.getElementById('navMobile');
 
     nav.addEventListener('click',  navActive);
+    navMobile.addEventListener('click',  navActiveMobile);
 
 
     $(window).stellar({
@@ -34,7 +36,7 @@ function onLoad() {
         menu.addEventListener("click", function(e) {
             let target = e.target;
 
-            if (target === closeMenu || target === menu || target.classList.contains('nav__item--mobile')) {
+            if (target === closeMenu || target === menu || target.classList.contains('nav__item')) {
                 //коли тиснема на переход по якорю також прибирати клас --active
                 setTimeout(function () {
                     menu.classList.toggle('mobile-menu--active');
@@ -114,6 +116,18 @@ function navActive(e) {
        if (child.classList.contains('nav__item--active')) {
            child.classList.remove('nav__item--active');
        }
+    });
+    if (e.target.classList.contains('nav__item')) {
+        e.target.classList.toggle('nav__item--active');
+    }
+}
+
+function navActiveMobile(e) {
+    const navArr = [...navMobile.children];
+    navArr.forEach((child) => {
+        if (child.classList.contains('nav__item--active')) {
+            child.classList.remove('nav__item--active');
+        }
     });
     if (e.target.classList.contains('nav__item')) {
         e.target.classList.toggle('nav__item--active');

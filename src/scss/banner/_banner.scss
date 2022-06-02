@@ -1,9 +1,10 @@
 .banner {
-  height: 40vw;
+  min-height: 40vw;
   background: url("../img/banner.jpg") no-repeat center center / cover;
   text-align: center;
   display: flex;
   align-items: center;
+  padding: 40px;
 
 
   &__title {
@@ -13,9 +14,19 @@
     font-weight: 500;
     letter-spacing: -1.19px;
     line-height: 1;
+
+    @include mobile-large {
+      font-size: 44px;
+    }
+
+    @include mobile {
+      font-size: 36px;
+    }
   }
 
   &__text {
     margin: 37px 0 42px;
+    font-size: 17px;
+    color: #3f3f3f;
   }
 }

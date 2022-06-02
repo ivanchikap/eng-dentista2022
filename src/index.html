@@ -17,6 +17,8 @@
 
     <link rel="stylesheet" href="css/animate.css">
 
+    <link rel="stylesheet" href="css/sprite.css">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -63,6 +65,25 @@
             </div>
             <!--/header__top-->
             <div class="header__bottom">
+
+                <i class="btn-menu fas fa-bars" id="btnMenu"></i>
+                <div class="mobile-menu" id="menu">
+                    <div class="mobile-menu__inner">
+                        <i class="mobile-menu__close far fa-times-circle" id="closeMenu"></i>
+
+                        <nav class="nav nav--mobile" id="navMobile">
+                            <a class="nav__item nav__item--active" href="#">Home</a>
+                            <a class="nav__item" href="#">About</a>
+                            <a class="nav__item" href="#">Services</a>
+                            <a class="nav__item" href="#">Gallery</a>
+                            <a class="nav__item" href="#">Blog</a>
+                            <a class="nav__item" href="#">Contact us</a>
+                        </nav>
+                        <!--/nav-->
+                    </div>
+                </div>
+
+                <!--/header__mobile-->
                 <nav class="nav" id="nav">
                     <a class="nav__item nav__item--active" href="#">Home</a>
                     <a class="nav__item" href="#">About</a>
@@ -89,11 +110,11 @@
         <section class="banner">
             <div class="container my-auto">
                 <div class="row">
-                    <div class="col-7">
+                    <div class="col-7 col-md-8 col-sm-12">
                         <h1 class="banner__title">We have Best Medicare
                             plan options for you</h1>
                         <p class="banner__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-                        <a href="#" class="btn btn--default">Read more</a>
+                        <a href="#" class="btn btn--blue">Read more</a>
                     </div>
                 </div>
             </div>
@@ -133,11 +154,194 @@
             </ul>
         </section>
         <!--/services-->
+        <section class="choose default-section">
+            <div class="container">
+                <header class="choose__header">
+                    <h2 class="title">
+                        Why Choose Us?
+                    </h2>
+                    <p class="choose__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                    </p>
+                </header>
+                <div class="choose__body">
+                    <div class="row">
+                        <div class="choose__col col-4 col-md-6 col-sm-12">
+                            <article class="choose__card">
+                                <h5 class="choose__card-title choose__card-title--1">Professional</h5>
+                                <p class="choose__card-text">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+                                </p>
+                            </article>
+                            <!--/choose__card-->
+                            <article class="choose__card">
+                                <h5 class="choose__card-title choose__card-title--2">Professional</h5>
+                                <p class="choose__card-text">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+                                </p>
+                            </article>
+                            <!--/choose__card-->
+                        </div>
+                        <!--/col-4-->
+                        <div class="choose__col col-4 offset-4 col-md-6 offset-md-0 col-sm-12">
+                            <article class="choose__card">
+                                <h5 class="choose__card-title choose__card-title--3">Professional</h5>
+                                <p class="choose__card-text">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+                                </p>
+                            </article>
+                            <!--/choose__card-->
+                            <article class="choose__card">
+                                <h5 class="choose__card-title choose__card-title--4">Professional</h5>
+                                <p class="choose__card-text">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+                                </p>
+                            </article>
+                            <!--/choose__card-->
+        </div>
+                        <!--/col-4-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/choose-->
+        <section class="stat default-section">
+            <h2 class="hidden-title">statistic</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 col-md-6 col-xs-12">
+                        <div class="stat__card">
+                            <div class="stat__card-icon bg-customers"></div>
+                            <div class="stat__card-count">1000+</div>
+                            <div class="stat__card-info">
+                                <span>Happy</span>
+                                <span>Customers</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/col-3-->
+                    <div class="col-3 col-md-6 col-xs-12">
+                        <div class="stat__card">
+                            <div class="stat__card-icon bg-heart"></div>
+                            <div class="stat__card-count">2017</div>
+                            <div class="stat__card-info">
+                                <span>Top</span>
+                                <span>Hospitality</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/col-3-->
+                    <div class="col-3 col-md-6 col-xs-12">
+                        <div class="stat__card">
+                            <div class="stat__card-icon bg-helicopter"></div>
+                            <div class="stat__card-count">1105</div>
+                            <div class="stat__card-info">
+                                <span>Innovative</span>
+                                <span>Approach</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/col-3-->
+                    <div class="col-3 col-md-6 col-xs-12">
+                        <div class="stat__card">
+                            <div class="stat__card-icon bg-lung"></div>
+                            <div class="stat__card-count">500+</div>
+                            <div class="stat__card-info">
+                                <span>Lung</span>
+                                <span>Replacement</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/col-3-->
+                </div>
+            </div>
+        </section>
+        <!--/stat-->
+        <div class="container default-section">
+            <div class="row">
+                <div class="col-8 col-md-12">
+                    <section class="works">
+                        <header class="works__header">
+                            <h3 class="title">How we works</h3>
+                            <p class="works__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                        </header>
+                        <div class="row">
+                            <div class="col-6 col-xs-12">
+                                <article class="works__card">
+                                    <a href="#" class="works__card-img">
+                                        <img src="img/works-img1.jpg" alt="works-img1">
+                                    </a>
+                                    <h5 class="works__card-title">
+                                        <a class="works__card-title-link" href="#">Lorem ipsum dolor sit amet.</a>
+                                    </h5>
+                                    <div class="works__card-about">
+                                        <span class="works__card-date">April 19, 2017</span>
+                                        <span class="works__card-author">Dr. Jon Doe</span>
+                                    </div>
+                                    <p class="works__card-description">
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+                                    </p>
+                                </article>
+                            </div>
+                            <!--/col-6-->
+                            <div class="col-6 col-xs-12">
+                                <article class="works__card">
+                                    <a href="#" class="works__card-img">
+                                        <img src="img/works-img2.jpg" alt="works-img1">
+                                    </a>
+                                    <h5 class="works__card-title">
+                                        <a class="works__card-title-link" href="#">Lorem ipsum dolor sit amet.</a>
+                                    </h5>
+                                    <div class="works__card-about">
+                                        <span class="works__card-date">April 19, 2017</span>
+                                        <span class="works__card-author">Dr. Jon Doe</span>
+                                    </div>
+                                    <p class="works__card-description">
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+                                    </p>
+                                </article>
+                            </div>
+                            <!--/col-6-->
+                        </div>
+                        <div class="works__btn">
+                            <a href="#" class="btn btn--blue">Read more</a>
+                        </div>
+                    </section>
+                    <!--/works-->
+                </div>
+                <!--/col-8-->
+                <div class="col-4 col-md-12">
+                    <section class="creative">
+                        <h3 class="title">Our creative</h3>
+                        <p class="creative__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                        <a href="#" class="btn btn--play"><span>Heart Treatment</span></a>
+                        <p class="creative__text mt-3">
+                            Sed ut perspiciatis unde omnis iste natus error s.it voluptatem accusantium doloremque laudantium.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+                        </p>
+                        <div class="creative__btn-wrapper">
+                            <a href="#" class="btn btn--play"><span>Heart Treatment</span></a>
+                            <a href="#" class="btn btn--play"><span>Heart Treatment</span></a>
+                            <a href="#" class="btn btn--play"><span>Heart Treatment</span></a>
+                        </div>
+                    </section>
+                    <!--/creative-->
+                </div>
+                <!--/col-4-->
+            </div>
+        </div>
+        <!--.container-->
+        <section class="gallery default-section"></section>
+        <!--/gallery-->
+        <section class="team default-section"></section>
+        <!--/team-->
+        <div class="consultation"></div>
+        <!--/consultation-->
     </main>
     <!--/main-->
 
-    <footer>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto assumenda, consequatur dolore ducimus, facere libero maxime minus odit officia quaerat quia temporibus tenetur? Dolore ea fuga itaque nobis voluptas.
+    <footer class="mt-5">
+        <div class="container">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto assumenda, consequatur dolore ducimus, facere libero maxime minus odit officia quaerat quia temporibus tenetur? Dolore ea fuga itaque nobis voluptas.
+        </div>
     </footer>
 
     <!-- jquery -->

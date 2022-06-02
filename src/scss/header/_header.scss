@@ -7,6 +7,10 @@
     align-items: center;
     padding: 20px 0;
     border-bottom: 1px solid rgba(#c2c2c2, 0.31);
+
+    @include laptop {
+      flex-direction: column;
+    }
   }
 
   &__logo {
@@ -15,7 +19,7 @@
     flex-shrink: 0;
 
     img {
-      @include img-cover;
+      @extend %img-cover;
     }
   }
 
@@ -23,6 +27,12 @@
     display: flex;
     max-width: calc(100% - 132px);
     overflow: hidden;
+
+    @include laptop {
+      margin-top: 20px;
+      max-width: 100%;
+      flex-wrap: wrap;
+    }
   }
 
   &__contact {
@@ -30,8 +40,39 @@
     align-items: center;
     padding: 0 32px;
 
+    @include tablet {
+      padding: 0 12px;
+    }
+
+    @include mobile-large {
+      max-width: 56%;
+      overflow: hidden;
+    }
+
+    @include mobile {
+      width: 100%;
+      max-width: 90%;
+      padding: 0;
+      margin: 8px 0;
+    }
+
     &:last-child {
       padding-right: 0;
+
+      @include mobile-large {
+        margin: 14px auto 0;
+        padding-left: 0;
+      }
+
+      @include mobile {
+        margin: 8px 0;
+      }
+    }
+
+    &:first-child {
+      @include laptop {
+        padding-left: 0;
+      }
     }
   }
 
@@ -44,11 +85,25 @@
     text-align: center;
     margin-right: 18px;
     flex-shrink: 0;
+
+    @include tablet {
+      margin-right: 8px;
+    }
+
+    @include mobile-large {
+      width: 40px;
+      height: 40px;
+      line-height: 41px;
+    }
   }
 
   &__contact-icon {
     color: #ffffff;
     font-size: 24px;
+
+    @include mobile-large {
+      font-size: 20px;
+    }
   }
 
   &__contact-info {
@@ -61,12 +116,12 @@
     font-weight: 700;
     text-transform: uppercase;
     max-width: 218px;
-    @include text-overflow;
+    @extend %text-overflow;
   }
 
   &__contact-text {
     max-width: 218px;
-    @include text-overflow;
+    @extend %text-overflow;
 
     &--link {
       transition: color .2s ease;
@@ -91,6 +146,10 @@
     flex-wrap: nowrap;
     overflow: hidden;
     align-items: center;
+
+    @include tablet {
+      max-width: 80%;
+    }
   }
 
   &__social-item {

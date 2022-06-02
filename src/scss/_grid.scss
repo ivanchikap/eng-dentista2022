@@ -1,6 +1,7 @@
 .container {
   padding: 0 15px;
   max-width: 1230px;
+  width: 100%;
   margin: 0 auto;
 
   @include laptop {
@@ -810,6 +811,10 @@
   }
   .order-md-12 {
     order: 12;
+  }
+
+  .offset-md-0 {
+    margin-left: 0;
   }
 
   .offset-md-1 {

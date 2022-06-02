@@ -1,3 +1,16 @@
+.btn-menu {
+  display: none;
+  font-size: 24px;
+  line-height: 46px;
+  padding: 0 12px;
+  cursor: pointer;
+  transition: color .2s ease-in-out;
+  z-index: 11;
+
+  @include tablet {
+    display: inline-block;
+  }
+}
 .mobile-menu {
   $root: &;
   display: block;
@@ -13,6 +26,7 @@
   background: rgba(0,0,0,.5);
   opacity: 0;
   transition: all .3s ease-out;
+
   @include mobile {
     max-width: 100%;
   }
@@ -30,9 +44,9 @@
   }
 
   &__inner {
-    padding: 14px;
+    padding: 52px 20px;
     position: absolute;
-    max-width: 320px;
+    max-width: 360px;
     left: 0;
     top: 0;
     height: 100%;
@@ -49,5 +63,13 @@
     cursor: pointer;
     align-self: flex-end;
     z-index: 12;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    transition: color .2s ease;
+
+    &:hover {
+      color: $red;
+    }
   }
 }
