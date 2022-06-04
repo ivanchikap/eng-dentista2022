@@ -93,6 +93,10 @@ body {
   text-align: center !important;
 }
 
+.text-white {
+  color: #fff !important;
+}
+
 @include tablet {
   .text-md-center {
     text-align: center !important;

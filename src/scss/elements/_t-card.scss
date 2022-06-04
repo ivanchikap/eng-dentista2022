@@ -1,0 +1,62 @@
+.t-card {
+  text-align: center;
+  font-family: $montserrat;
+  font-weight: 500;
+
+  &__img {
+    margin: 26px auto;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 50%;
+
+    img {
+      @extend %img-cover;
+    }
+  }
+
+  &__name {
+    font-size: 25px;
+    @extend %text-overflow;
+  }
+
+  &__position {
+    display: inline-block;
+    font-size: 18px;
+    letter-spacing: -1.09px;
+    margin-bottom: 20px;
+    @extend %text-overflow;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__social-link {
+    color: #0087be;
+    font-size: 24px;
+    transition: color .2s ease;
+
+    &:hover {
+      color: $black;
+    }
+
+    & + & {
+      margin-left: 14px;
+    }
+  }
+
+  @include tablet {
+    .col-md-6:not(:nth-child(-n + 2)) {
+      margin-top: 38px;
+    }
+  }
+
+  @include mobile {
+    .col-xs-12:not(:nth-child(-n + 1)) {
+      margin-top: 24px;
+    }
+  }
+}
