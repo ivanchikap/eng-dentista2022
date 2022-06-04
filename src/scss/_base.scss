@@ -127,6 +127,7 @@ body {
   border-radius: 36px;
   border: 2px solid transparent;
   transition: all .2s ease;
+  flex-shrink: 0;
   @extend %text-overflow;
 
   @include mobile {

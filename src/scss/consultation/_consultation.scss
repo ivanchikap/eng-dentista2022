@@ -1,0 +1,41 @@
+.consultation {
+  min-height: 176px;
+  padding: 20px 0;
+  background-color: #e2e2e2;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+
+    @include mobile-large {
+      flex-direction: column;
+    }
+  }
+
+  &__text {
+    color: #494949;
+    font-family: $montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: 76px;
+    line-height: 1.2;
+    max-height: 72px;
+    overflow: hidden;
+
+    @include tablet {
+      margin-right: 40px;
+    }
+
+    @include mobile-large {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+
+    @include mobile {
+      max-height: 108px;
+    }
+  }
+}
