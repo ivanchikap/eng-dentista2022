@@ -12,17 +12,52 @@
     letter-spacing: 0.55px;
     margin-bottom: 68px;
     @extend %text-overflow;
+
+    @include tablet {
+      margin-bottom: 54px;
+    }
+    @include mobile-large {
+      margin-bottom: 44px;
+    }
+    @include mobile {
+      margin-bottom: 34px;
+    }
   }
 
   &__contact {
     display: flex;
     align-items: center;
+
+    & + & {
+      margin-top: 50px;
+
+      @include mobile-large {
+        margin-top: 32px;
+      }
+    }
+  }
+
+  &__contact-info {
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+  }
+
+  &__contact-icon {
+    font-size: 40px;
+    color: rgba(255, 255, 255, .51);
+    margin-right: 36px;
+    width: 56px;
   }
 
   &__social {
     @extend .header__social;
     max-width: 100%;
     margin-top: 60px;
+
+    @include mobile-large {
+      margin-top: 40px;
+    }
   }
 
   &__social-item {
@@ -47,7 +82,6 @@
   }
 
   &__list-item {
-    @extend %text-overflow;
     color: rgba(255, 255, 255, 0.51);
     font-size: 16px;
     letter-spacing: 0.4px;
@@ -63,6 +97,10 @@
 
     & + & {
       margin-top: 22px;
+
+      @include mobile-large {
+        margin-top: 16px;
+      }
     }
   }
 
@@ -86,6 +124,50 @@
       @include mobile-large {
         display: none;
       }
+    }
+  }
+
+  &__input {
+    width: 100%;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.51);
+    font-family: $opensans;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    line-height: normal;
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(194, 194, 194, .42);
+
+    &::placeholder {
+      @extend .footer__input;
+    }
+
+    &--textarea {
+      width: 100%;
+      background-color: transparent;
+      border-bottom: none;
+      height: 108px;
+      color: rgba(255, 255, 255, 0.51);
+      font-family: $opensans;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0.4px;
+      line-height: normal;
+      padding: 18px 0;
+      border-bottom: 1px solid rgba(194, 194, 194, .42);
+    }
+  }
+
+  @include tablet {
+    .col-md-6:not(:nth-child(-n + 2)) {
+      margin-top: 40px;
+    }
+  }
+
+  @include mobile {
+    .col-xs-12:not(:nth-child(-n + 1)) {
+      margin-top: 40px;
     }
   }
 }
